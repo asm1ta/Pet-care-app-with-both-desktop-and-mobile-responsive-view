@@ -1,0 +1,338 @@
+/* Existing styles (Unchanged) */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  background-color: #f2f2f2;
+  position: relative;
+  z-index: 10;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  z-index: 1;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  color: white;
+  max-width: 450px;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.45);
+  padding: 0.8rem;
+  border-radius: 10px;
+}
+
+.hero-content h1 {
+  font-size: 2.3rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.3;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
+
+.hero-button {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 75vh;
+  }
+
+  .hero-content {
+    top: 45%;
+    left: 5%;
+    right: 5%;
+    transform: translateY(-50%);
+    text-align: center;
+    max-width: 100%;
+    padding: 0.8rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.7rem;
+    line-height: 1.2;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+.services, .products, .about, .team, .blog {
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.services h2, .products h2, .about h2, .team h2, .blog h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.service-grid, .product-grid, .team-grid, .blog-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 1rem;
+}
+
+.service-grid img, .product-grid img, .team-grid img, .blog-grid img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: #f2f2f2;
+  margin-top: 2rem;
+}
+
+/* ====================== */
+/* CONTACT PAGE STYLES ✅ */
+/* ====================== */
+
+.contact-page {
+  background-color: #0a0a23;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.get-in-touch {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.get-in-touch h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  background: white;
+  color: black;
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+}
+
+.contact-form label {
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form button {
+  background-color: #0a0a23;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-form button:hover {
+  background-color: #1b1b40;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contact-info h4 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.contact-info a {
+  color: #a8d0ff;
+  text-decoration: underline;
+}
+
+.newsletter {
+  margin-top: 4rem;
+  padding: 2rem 1rem;
+  background-color: #0b0b2e;
+  text-align: center;
+  color: white;
+}
+
+.newsletter h3 {
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter p {
+  margin-bottom: 1rem;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.newsletter-form input {
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: none;
+  width: 250px;
+  max-width: 80%;
+}
+
+.newsletter-form button {
+  padding: 0.6rem 1.2rem;
+  background-color: #ffffff;
+  color: #0a0a23;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background-color: #dddddd;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  background-color: #0a0a23;
+  color: #fff;
+}
+
+.footer-brand {
+  max-width: 240px;
+}
+
+.footer-grid h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+}
+
+.footer-grid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-grid li {
+  margin-bottom: 0.4rem;
+  cursor: pointer;
+}
+
+.footer-grid li:hover {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 1rem;
+  border-top: 1px solid #333;
+  background-color: #0a0a23;
+  color: #ccc;
+}
